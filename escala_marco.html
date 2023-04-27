@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="shortcut icon" href="../ex_004/favicon.ico" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas Grandes</title>
+<style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+      padding-top: 50px;
+      
+    }
+
+    table {
+        position: relative;
+        border: 1px solid black;
+        width: 450px;
+        border-collapse: collapse;
+        margin: auto;
+       
+        text-align: center;
+    }
+
+    td, th {
+        border: 1px solid black;
+        padding: 6px;
+        text-align: center;
+    }
+
+
+    tbody > tr:nth-child(1n):hover {
+        font-size: 1.1em;
+        font-weight: bold;
+    }
+
+    tbody > tr:nth-child(3n-1):hover {
+        font-size: 1.1em;
+        font-weight: bold;
+    }
+
+    tbody > tr:nth-child(3n):hover {
+        font-size: 1.1em;
+        font-weight: bold;
+    }
+
+   
+
+    caption {
+        font-size: 1.5em;
+        font-weight: bold;
+        padding: 8px;
+      
+        border-top: 1px solid black;
+        border-left: 1px solid black;
+        border-right: 1px solid black;
+        border-radius: 10px 10px 0px 0px;
+       
+    }
+
+    
+
+    thead, tfoot {
+        background-color: rgb(156, 155, 155);
+        color: white;
+    }
+
+    thead > tr  th {
+        position: sticky;
+        top: -1px;
+        background-color: rgb(156, 155, 155);
+    }
+
+    div {
+        width: 401px;
+        margin: auto;
+    }
+
+    
+</style>
+
+</head>
+<body>
+
+    <!--Anatomia para tabelas grandes
+      TABLE
+        CAPTION
+        THEAD
+            TR, TD, TH
+        TBODY
+            TR, TD, TH   
+        TFOOT
+            TR, TD, TH
+-->
+
+    <div>
+        <table>
+           <caption>Escala de Serviço dos Motoristas <br> da UPA NORTE (Maio/2023)</caption>
+            <thead>
+                <tr>
+                    <th style="width: 50px;" colspan="2">Dia</th>
+        
+        
+                    <th scope="col" style="width: 150px;">Diurno</th>
+                    <th scope="col" style="width: 150px;">Noturno</th>
+        
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>01*</td>
+                    <td>Seg</td>
+                    <td>Rafael</td>
+                    <td>Anderson</td>
+                </tr>
+                <tr>
+                    <td>02</td>
+                    <td>Ter</td>
+                    <td>Rafel</td>
+                    <td>Odair</td>
+                </tr>
+                <tr>
+                    <td>03</td>
+                    <td>Qua</td>
+                    <td>Rafael(HP)</td>
+                    <td>Anderson (HP)</td>
+                </tr>
+                <tr>
+                    <td>04</td>
+                    <td>Qui</td>
+                    <td>Odair HP</td>
+                    <td>Odair</td>
+                </tr>
+                <tr>
+                    <td>05</td>
+                    <td>Sex</td>
+                    <td>Rafael</td>
+                    <td>Anderson</td>
+                </tr>
+                <tr>
+                    <td>06</td>
+                    <td>Sab</td>
+                    <td>Anderson (HP)</td>
+                    <td>Odair (HP)</td>
+                </tr>
+                <tr>
+                    <td>07</td>
+                    <td>Dom</td>
+                    <td>Odair</td>
+                    <td>Anderson</td>
+                </tr>
+                <tr>
+                    <td>08</td>
+                    <td>Seg</td>
+                    <td>Rafel</td>
+                    <td>Odair</td>
+                </tr>
+                <tr>
+                    <td>09</td>
+                    <td>Ter</td>
+                    <td>Rafael (HP)</td>
+                    <td>Anderson (HP)</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>Qua</td>
+                    <td>Odair</td>
+                    <td>Odair (HP)</td>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td>Qui</td>
+                    <td>Rafel</td>
+                    <td>Anderson</td>
+                </tr>
+                <tr>
+                    <td>12</td>
+                    <td>Sex</td>
+                    <td>Rafael</td>
+                    <td>Odair</td>
+                </tr>
+                <tr>
+                    <td>13</td>
+                    <td>Sab</td>
+                    <td>Rafael (HP)</td>
+                    <td>Anderson</td>
+                </tr>
+                <tr>
+                    <td>14</td>
+                    <td>Dom</td>
+                    <td>Anderson (HP)</td>
+                    <td>Odair (HP)</td>
+                </tr>
+                <tr>
+                    <td>15</td>
+                    <td>Seg</td>
+                    <td>Rafael (HP)</td>
+                    <td>Anderson (HP)</td>
+                </tr>
+                <tr>
+                    <td>16</td>
+                    <td>Ter</td>
+                    <td>Rafael</td>
+                    <td>Odair</td>
+                </tr>
+                <tr>
+                    <td>17</td>
+                    <td>Qua</td>
+                    <td>Rafael (HP)</td>
+                    <td>Anderson</td>
+                </tr>
+                <tr>
+                    <td>18</td>
+                    <td>Qui</td>
+                    <td>Anderson (HP)</td>
+                    <td>Odair (HP)</td>
+                </tr>
+                <tr>
+                    <td>19</td>
+                    <td>Sex</td>
+                    <td>Rafael</td>
+                    <td>Anderson</td>
+                </tr>
+                <tr>
+                    <td>20</td>
+                    <td>Sab</td>
+                    <td>Anderson (HP)</td>
+                    <td>Odair</td>
+                </tr>
+                <tr>
+                    <td>21</td>
+                    <td>Dom</td>
+                    <td>Rafael (HP)</td>
+                    <td>Anderson</td>
+                </tr>
+                <tr>
+                    <td>22</td>
+                    <td>Seg</td>
+                    <td>Odair</td>
+                    <td>Odair (HP)</td>
+                </tr>
+                <tr>
+                    <td>23</td>
+                    <td>Ter</td>
+                    <td>Rafael (HP)</td>
+                    <td>Anderson (HP)</td>
+                </tr>
+                <tr>
+                    <td>24</td>
+                    <td>Qua</td>
+                    <td>Rafael</td>
+                    <td>Odair</td>
+                </tr>
+                <tr>
+                    <td>25</td>
+                    <td>Qui</td>
+                    <td>Odair (HP)</td>
+                    <td>Anderson</td>
+                </tr>
+                <tr>
+                    <td>26</td>
+                    <td>Sex</td>
+                    <td>Rafael</td>
+                    <td>Odair (HP)</td>
+                </tr>
+                <tr>
+                    <td>27</td>
+                    <td>Sab</td>
+                    <td>Rafael (HP)</td>
+                    <td>Anderson</td>
+                </tr>
+                <tr>
+                    <td>28</td>
+                    <td>Dom</td>
+                    <td>Anderson (HP)</td>
+                    <td>Odair</td>
+                </tr>
+                <tr>
+                    <td>29</td>
+                    <td>Seg</td>
+                    <td>Rafael (HP)</td>
+                    <td>Anderson</td>
+                </tr>
+                <tr>
+                    <td>30</td>
+                    <td>Ter</td>
+                    <td>Rafael</td>
+                    <td>Odair (HP)</td>
+                </tr>
+                <tr>
+                    <td>31</td>
+                    <td>Qua</td>
+                    <td>Rafael (HP)</td>
+                    <td>Anderson (HP)</td>
+                </tr>
+
+                
+
+                <tr>
+                    <td colspan="2">Anderson</td>
+                    
+                    <td colspan="2">99847-4712 </td>
+                   
+                    
+                </tr>
+
+                <tr>
+                    <td colspan="2">Rafael</td>
+                    
+                    <td colspan="2">99141-6688</td>
+                    
+                </tr>
+
+                <tr>
+                    <td colspan="2">Odair</td>
+                    
+                    <td colspan="2">98437-7199</td>
+                    
+                </tr>
+
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th>#</th>
+                    <th scope="row">#</th>
+                    <td class="num">#</td>
+                    <td>#</td>
+                </tr>
+            </tfoot>
+        
+        </table>
+        <p>(*) - Feriado do Dia do Trabalho</p>
+    </div>
